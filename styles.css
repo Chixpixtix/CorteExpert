@@ -1,6 +1,74 @@
+/* Estilo general */
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo claro */
+}
+
+h1, h2, h3 {
+    color: #333; /* Títulos en color oscuro */
+}
+
+/* Barra de Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333; /* Fondo oscuro */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+#home {
+    background-color: #fff;
     text-align: center;
+}
+
+/* Servicios */
+.service {
+    margin-bottom: 15px;
+}
+
+/* Formulario */
+form input, form select {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
 }
