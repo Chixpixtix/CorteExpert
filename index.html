@@ -8,17 +8,20 @@
 </head>
 <body>
 
+    <!-- Header de la página -->
     <header>
         <h1>Bienvenido al Sistema de Gestión Barbería</h1>
+        <p>Gestione las citas, los clientes y los barberos.</p>
     </header>
 
-    <!-- Botón para añadir un nuevo cliente -->
-    <div>
+    <!-- Sección de agregar cliente -->
+    <section id="add-client-section">
+        <h2>Agregar Nuevo Cliente</h2>
         <button id="add-client">Agregar Cliente</button>
-    </div>
+    </section>
 
-    <!-- Tabla de Clientes en Espera -->
-    <section>
+    <!-- Sección de Clientes en espera -->
+    <section id="clients-waiting-section">
         <h2>Clientes en Espera</h2>
         <table id="client-table">
             <thead>
@@ -30,7 +33,24 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Aquí se irán agregando los clientes -->
+                <!-- Los clientes se agregarán aquí -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Sección de Comisiones de Barberos -->
+    <section id="barber-commissions">
+        <h2>Comisiones de Barberos</h2>
+        <table id="barber-commissions-table">
+            <thead>
+                <tr>
+                    <th>Barbero</th>
+                    <th>Corte Realizado</th>
+                    <th>Comisión</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las comisiones se agregarán aquí -->
             </tbody>
         </table>
     </section>
@@ -38,4 +58,5 @@
     <script src="js/scripts.js"></script>
 </body>
 </html>
+
 
