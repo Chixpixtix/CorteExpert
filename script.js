@@ -1,5 +1,5 @@
 // Evento para agregar un cliente
-document.getElementById('add-client').addEventListener('click', function() {
+document.getElementById('add-client-button').addEventListener('click', function() {
     const name = prompt('Ingrese el nombre del cliente:');
     const service = prompt('Ingrese el servicio solicitado (corte, afeitado, etc.):');
     const time = new Date().toLocaleTimeString();
