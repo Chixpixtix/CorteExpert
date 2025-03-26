@@ -3,6 +3,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 header {
@@ -15,31 +16,15 @@ header {
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 button:hover {
     background-color: #45a049;
-}
-
-#client-table, #barber-commissions-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-#client-table th, #client-table td, #barber-commissions-table th, #barber-commissions-table td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-#client-table th, #barber-commissions-table th {
-    background-color: #4CAF50;
-    color: white;
 }
 
 h2 {
@@ -47,6 +32,54 @@ h2 {
 }
 
 section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#add-client-button {
+    background-color: #FF9800;
+    font-size: 18px;
     padding: 10px;
 }
 
+#add-client-button:hover {
+    background-color: #f57c00;
+}
+
+#client-table tr:nth-child(even), #barber-commissions-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#client-table button, #barber-commissions-table button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#client-table button:hover, #barber-commissions-table button:hover {
+    background-color: #45a049;
+}
