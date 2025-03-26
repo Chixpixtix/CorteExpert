@@ -1,61 +1,19 @@
-/* Estilo general */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Fondo claro */
 }
 
-h1, h2, h3 {
-    color: #333; /* Títulos en color oscuro */
-}
-
-/* Barra de Navegación */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    background-color: #333; /* Fondo oscuro */
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-}
-
-/* Secciones */
-section {
+header {
+    background-color: #4CAF50;
     padding: 20px;
-    margin: 10px 0;
-}
-
-#home {
-    background-color: #fff;
+    color: white;
     text-align: center;
 }
 
-/* Servicios */
-.service {
-    margin-bottom: 15px;
-}
-
-/* Formulario */
-form input, form select {
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-}
-
 button {
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50;
     color: white;
     padding: 10px;
     border: none;
@@ -66,9 +24,20 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Media Queries para Responsividad */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
+#client-table {
+    width: 100%;
+    border-collapse: collapse;
 }
+
+#client-table th, #client-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#client-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
