@@ -3,19 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corte Expert System</title>
-     <link rel="stylesheet" href="styles.css">
+    <title>Barbería</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Enlace al archivo CSS -->
 </head>
-    <nav>
-    <ul>
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#appointments">Reserva de Citas</a></li>
-        <li><a href="#contact">Contacto</a></li>
-    </ul>
-</nav>
 <body>
-    <h1>Bem-vindo ao Corte Expert</h1>
-    <script src="script.js"></script>
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#appointments">Reserva de Citas</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Bienvenida (Inicio) -->
+    <section id="home">
+        <h1>Bienvenido a Nuestra Barbería</h1>
+        <p>Te ofrecemos los mejores cortes de cabello en un ambiente cómodo y relajante.</p>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="services">
+        <h2>Servicios</h2>
+        <div class="service">
+            <h3>Corte de Cabello</h3>
+            <p>Descripción del corte.</p>
+            <p>Precio: $XX</p>
+        </div>
+        <div class="service">
+            <h3>Afeitado</h3>
+            <p>Descripción del afeitado.</p>
+            <p>Precio: $XX</p>
+        </div>
+    </section>
+
+    <!-- Sección de Reserva de Citas -->
+    <section id="appointments">
+        <h2>Reserva tu Cita</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Fecha y Hora:</label>
+            <input type="datetime-local" id="date" name="date" required>
+
+            <label for="service">Selecciona el Servicio:</label>
+            <select id="service" name="service" required>
+                <option value="haircut">Corte de Cabello</option>
+                <option value="shave">Afeitado</option>
+                <option value="beard">Arreglo de Barba</option>
+            </select>
+
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? Contáctanos:</p>
+        <p>Teléfono: (XXX) XXX-XXXX</p>
+        <p>Correo Electrónico: contacto@barberia.com</p>
+        <p>Dirección: Calle Ejemplo 123, Ciudad</p>
+    </section>
+
+    <script src="js/scripts.js"></script> <!-- Enlace al archivo JS -->
 </body>
 </html>
