@@ -18,26 +18,35 @@ button {
     padding: 10px;
     border: none;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-#client-table {
+#client-table, #barber-commissions-table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
-#client-table th, #client-table td {
+#client-table th, #client-table td, #barber-commissions-table th, #barber-commissions-table td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
 }
 
-#client-table th {
+#client-table th, #barber-commissions-table th {
     background-color: #4CAF50;
     color: white;
 }
 
+h2 {
+    margin-top: 20px;
+}
+
+section {
+    padding: 10px;
+}
 
